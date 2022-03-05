@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:url(123.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 120px;
+    cursor:pointer ;
+}
+.user{
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+.user ul li{
+   
+    position: relative;
+}
+.user ul li::after{
+    content: '';
+    height: 3px;
+    position: absolute;
+
+}
+.user ul li:hover::after{
+    width: 80%;
+}
+input{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    border-color: #fdfcfa;
+    font-weight: bold;
+    background: transparent;
+    color: rgb(253, 250, 250);
+    position: relative;
+}
+.user label{
+    color: #fd9903;
+    font-style: oblique;
+    font-weight: bolder;
+}
+button{
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #f8f7f6;
+    background: transparent;
+    color: rgb(247, 241, 241);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(245, 237, 237);
+
+}
+span{
+    background: #a70303;
+    height: 100%;
+    width: 0;
+    box-sizing: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+
+}

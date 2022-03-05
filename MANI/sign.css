@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:url(laptop-keyboard-notebook-trackpoint.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 120px;
+    cursor:pointer ;
+}
+.user{
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+.user ul li{
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+.user ul li::after{
+    content: '';
+    height: 3px;
+    position: absolute;
+
+}
+.user ul li:hover::after{
+    width: 80%;
+}
+label{
+    color: #fdfbfd;
+}
+input{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    background: transparent;
+    color: rgb(255, 1, 1);
+    border-color: rgb(247, 243, 243);
+    cursor: pointer;
+    position: relative;
+}
+button{
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fdfcfd ;
+    background: transparent;
+    color: rgb(250, 4, 4);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(250, 3, 3);
+
+}
+span{
+    background: #fdfbfd;
+    height: 100%;
+    width: 0;
+    box-sizing: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+
+}
